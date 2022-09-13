@@ -2,7 +2,8 @@ import React from "react";
 import "./resta.css";
 
 function Resta() {
-    return (bop
+    return (
+        <h1> Restaurants</h1>
     );
 };
 

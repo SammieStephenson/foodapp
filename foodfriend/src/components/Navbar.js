@@ -1,15 +1,12 @@
-import React from "react";
-import './Navbar.css';
-import Friends from "../pages/friends";
-import Resta from "../pages/resta";
 
-function Navbar() {
+export default function Navbar() {
+    const path = window.location.pathname;
     return (
-        <nav className="navbar">
+        <nav className="nav">
             <a href="/" classname="logo">LOGO</a>
             <ul>
                 <li>
-                    <a href="/Resta" className="resta"> Restaurants </a>
+                    <a href="/Resta"> Restaurants </a>
                 </li>
                 <li>
                     <a href="/friends"> Friends </a>
@@ -19,4 +16,3 @@ function Navbar() {
     )
 };
 
-export default Navbar;
