@@ -9,7 +9,10 @@ const port = process.env.PORT || 8080;
 app
     .use(express.static('public'))
     .use(morgan('dev'))
+npm
     .use(bodyParser.urlencoded({ extended: false }))
     .use(bodyParser.json())
 
     .listen(port, () => console.log('Server listening to port 8080'))
+
+export default Serverrrrrr;

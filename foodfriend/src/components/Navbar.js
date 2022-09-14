@@ -1,9 +1,9 @@
-
+// import '.src/components/Navbar.css'
 export default function Navbar() {
-    const path = window.location.pathname;
+
     return (
         <nav className="nav">
-            <a href="/" classname="logo">LOGO</a>
+            {/* <a href="/" classname="logo"><img src="images/LowLogo.png"></img></a> */}
             <ul>
                 <li>
                     <a href="/Resta"> Restaurants </a>
