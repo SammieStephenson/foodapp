@@ -1,8 +1,10 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Resta from './pages/resta';
-import Friends from './pages/friends';
-import Home from './pages/home';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Resta from "./pages/resta";
+import Home from "./pages/home";
+import Friends from "./pages/friends";
+
+
 
 function App() {
   let component
@@ -28,3 +30,4 @@ function App() {
 }
 
 export default App;
+

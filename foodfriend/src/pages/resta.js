@@ -1,29 +1,17 @@
-// import React from "react";
-// import "./resta.css";
-import { Component } from "react";
-import { Map, GoogleApiWrapper } from "google-map-react";
+import React from "react";
+import "./resta.css";
+import Restmap from "../components/map";
 
-class MapContainer extends Component {
-    render() {
-        return (
-            <Map
-                google={this.props.google}
-                style={{ width: "100%", height: "100%" }}
-                zoom={10}
-                initialCenter={
-                    {
-                        lat: 35.245309,
-                        lng: -80.804737
-                    }
-                }
+export default function Resta() {
+    return (
+        <>
+            <h1> Restaurants </h1>
+            <Restmap />
+            <div>
+                <h3> Near YOU...</h3>
+                <p> </p>
+            </div>
+        </>
+    )
+};
 
-            />
-        );
-    }
-}
-
-
-
-export default GoogleApiWrapper({
-    apiKey: "AIzaSyD9lubBFDNuvtMw5rCDiwKaip2Ezjq8Lvs"
-})(MapContainer)
